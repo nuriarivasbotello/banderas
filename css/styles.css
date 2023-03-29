@@ -1,0 +1,97 @@
+.image {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  /* En position, da igual el orden de las palabras bottom-right = right-bottom. Con valores, el primero número es el eje x y el segundo el eje y */
+  background-position: center;
+  /* Palabras clave para size: contain (hasta el límite), cover (rellena lo que le indiques) */
+  background-size: 500px;
+  /* También se pede poner grados para indicar la dirección del degradado */
+  background-image: linear-gradient(
+      to right,
+      rgb(170, 60, 222) 25%,
+      transparent 25%
+    ),
+    linear-gradient(rgb(38, 255, 0) 25%, white 25% 75%, rgb(38, 255, 0) 75%);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 0px 0px 100px;
+  color: white;
+  background-color: #333;
+}
+.text1 {
+  margin: 50px 0px 0px 360px;
+  font-size: 30px;
+}
+
+.flags {
+  margin: 70px 0px 0px 70px;
+  width: 1000px;
+  height: 900px;
+}
+.flag {
+  width: 300px;
+  height: 200px;
+  border: 10px white solid;
+  display: inline-block;
+}
+.flag1 {
+  background-image: linear-gradient(
+    red 33%,
+    blue 33% 66%,
+    rgb(213, 189, 11) 66%
+  );
+}
+.flag2 {
+  background-image: linear-gradient(
+    to right,
+    black 33%,
+    yellow 33% 66%,
+    red 66%
+  );
+}
+.flag3 {
+  background-image: linear-gradient(
+    rgb(73, 196, 233) 35%,
+    white 35% 40%,
+    black 40% 60%,
+    white 60% 65%,
+    rgb(73, 196, 233) 65%
+  );
+}
+.flag4 {
+  background-image: linear-gradient(
+      to right,
+      rgb(17, 124, 31) 35%,
+      transparent 35%
+    ),
+    linear-gradient(rgb(225, 255, 0) 50%, rgb(255, 0, 0) 50%);
+}
+.flag5 {
+  background-image: linear-gradient(130deg, green 35%, yellow 35% 65%, red 65%);
+}
+.flag6 {
+  background-image: linear-gradient(125deg, blue 25%, transparent 25%),
+    linear-gradient(140deg, yellow 45%, transparent 45%),
+    linear-gradient(155deg, red 60%, transparent 60%),
+    linear-gradient(170deg, white 80%, transparent 80%),
+    linear-gradient(340deg, green 95%, transparent 95%);
+}
+.radial1 {
+  background-image: radial-gradient(50px, red 100px, white 100px);
+}
+.radial2 {
+  background-image: radial-gradient(
+    50px at 90px 90px,
+    yellow 100px,
+    rgb(85, 179, 223) 100px
+  );
+}
+.radial3 {
+  background-image: radial-gradient(40px, white 100px, transparent 100px),
+    linear-gradient(red 28%, blue 28% 74%, red 74%);
+}
